@@ -84,7 +84,7 @@ vsp += grv;
 if place_meeting(x,y+32,ladderBlock_OBJ) && key_down = 1 && hsp = 0 pState = pState.ladder;
 else if place_meeting(x,y,ladderBlock_OBJ) && hsp = 0 pState = pState.ladder;
 else if pState != pState.monkeyBars pState = pState.normal;
-if !place_meeting(x,y + 52,ladderBlock_OBJ) pState = pState.normal;
+
 
 #endregion
 
