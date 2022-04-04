@@ -1,0 +1,1 @@
+global.buttonTouched = false;

@@ -1,0 +1,2 @@
+//Define Variables
+stung = false;

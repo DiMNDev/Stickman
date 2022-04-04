@@ -1,0 +1,1 @@
+global.ystartladder = event_data[? "rawposY"];

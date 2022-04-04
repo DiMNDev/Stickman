@@ -1,0 +1,1 @@
+sprite_index = ANI_title_text;

@@ -1,0 +1,1 @@
+if dbl_jump = true dbl_jump = false;
