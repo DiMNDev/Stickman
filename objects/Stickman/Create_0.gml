@@ -1,3 +1,19 @@
+
+iceCheck = 0;
+localX = 0;
+localY = 0;
+printVar = 0;
+aimAngle = 0;
+flickDirection = "";
+vspDamage =0;
+floorDistance = 0;
+#region Shader alpha
+shadeComp = shader_is_compiled(shader_changeAlpha);
+shadeSup = shaders_are_supported();
+shaderAlpha = 1;
+alphaIncrement = .1;
+#endregion
+
 //Define camera position
 view_xport[0] = x;
 view_yport[0] = y;
@@ -18,9 +34,13 @@ global.coll_mapid = layer_tilemap_get_id("Collision64");
 
 //Establsih Player States
 enum pState{
-	normal,ladder, monkeyBars, ccntGun
+	normal, jumping, ladder, monkeyBars, ccntGun, slide
 }
 pState = pState.normal;
+enum aimWalk {
+aim, walk
+}
+aimWalk = aimWalk.aim
 //character control
 air = 0;
 runTimer = 0;
@@ -32,7 +52,10 @@ vsp = 0;
 vsp_fraction = 0;
 spd_jump = -9;
 grv = 0.4;
-walksp = 4;
+momentum = 0;
+momentumMax = 4;
+fric = .05;
+walksp = 1;
 climb_speed = 3;
 jump = false;
 dbl_jump = false;
@@ -57,6 +80,8 @@ guiTap_x = 0;
 guiTap_y = 0;
 guiDragStarty = 0;
 guiDragEndY = 0;
+dragStartY = 0;
+dragEndY = 0;
 dragging = false;
 global.buttonTouched = false;
 //Weapon acquisiton

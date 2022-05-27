@@ -1,9 +1,9 @@
 {
-  "isDnD": true,
+  "isDnD": false,
   "isCompatibility": false,
   "parent": {
-    "name": "Scripts",
-    "path": "folders/Scripts.yy",
+    "name": "Old scripts",
+    "path": "folders/Scripts/Old scripts.yy",
   },
   "resourceVersion": "1.0",
   "name": "dbl_jump_SCR",

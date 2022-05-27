@@ -1,0 +1,3 @@
+levelID = "";
+signID = "";
+tap = false;

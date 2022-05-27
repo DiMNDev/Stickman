@@ -4,7 +4,7 @@
     "path": "sprites/signObject_SP/signObject_SP.yy",
   },
   "solid": false,
-  "visible": false,
+  "visible": true,
   "spriteMaskId": null,
   "persistent": false,
   "parentObjectId": null,

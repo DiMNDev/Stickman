@@ -1,0 +1,1 @@
+part_particles_create(global.particleSystem01,x+14,y+32,global.grassParticle,1)
