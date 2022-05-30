@@ -18,12 +18,17 @@ ran2 = irandom_range(-2,2);
 //}
 
 //
-if point_in_circle(x,y,xstart,ystart,256) {
+
+#region Beehive exists
+hiveX = localHive.x;
+hiveY = localHive.y;
+#endregion
+if point_in_circle(x,y,hiveX,hiveY,256) {
 	y = y + ran2;
 	x = x + ran2;	
 }
-if !point_in_circle(x,y,xstart,ystart,256) {
-	move_towards_point(xstart,ystart,3);	
+if !point_in_circle(x,y,hiveX,hiveY,256) {
+	move_towards_point(hiveX,hiveY,3);	
 }
 
 //More Precise

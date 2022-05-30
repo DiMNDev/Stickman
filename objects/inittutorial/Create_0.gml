@@ -1,0 +1,2 @@
+/// @description Set timer
+alarm_set(0,60)

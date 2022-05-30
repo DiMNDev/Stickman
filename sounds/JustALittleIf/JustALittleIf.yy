@@ -12,7 +12,7 @@
     "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "JustALittleIf.mp3",
-  "duration": 101.120033,
+  "duration": 101.12003,
   "parent": {
     "name": "Sounds",
     "path": "folders/Sounds.yy",

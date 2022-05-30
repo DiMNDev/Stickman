@@ -5,6 +5,7 @@
   },
   "solid": true,
   "visible": true,
+  "managed": true,
   "spriteMaskId": null,
   "persistent": false,
   "parentObjectId": null,
@@ -29,8 +30,8 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Enemies",
-    "path": "folders/Objects/Enemies.yy",
+    "name": "Bumblebee",
+    "path": "folders/Objects/Enemies/Bumblebee.yy",
   },
   "resourceVersion": "1.0",
   "name": "bumbleBee_OBJ",

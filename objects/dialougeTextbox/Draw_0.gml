@@ -34,14 +34,15 @@ draw_char = clamp(draw_char, 0, text_length[page]);
 #endregion
 #region flip through pages
 
-if dialougeTap = 1
+if dialougeTap = 1 
 {
 //if typing is done
-if draw_char == text_length[page]
+if draw_char == text_length[page] 
 {
 	// next page
 	if page < pageNumber-1 
 		{
+			if alarm[2] > -1 alarm_set(2,-1);
 			page++;
 			draw_char = 0;
 			dialougeTap = 0;
@@ -58,7 +59,9 @@ if draw_char == text_length[page]
 	dialougeTap = 0;
 	}
 
-} 
+} else if draw_char = text_length[page] && page < pageNumber - 1 && alarm[2] == -1 {
+alarm_set(2,90);	
+}
 
 #endregion
 #region draw the textbox
@@ -73,9 +76,7 @@ var _drawText = string_copy(text[page], 1, draw_char);
 draw_text_ext_color(textbox_x + text_x_offset[page]+ textBorder, textbox_y + textBorder, _drawText, line_sep, line_width,c_white,c_white,c_white,c_white,textAlpha);
 #endregion
 #region set timer to auto cycle page
-if draw_char = text_length[page] && page < pageNumber - 1 && alarm[2] == -1 {
-alarm_set(2,90);	
-}
+
 #endregion
 #region set timer on last page after text is typed
 

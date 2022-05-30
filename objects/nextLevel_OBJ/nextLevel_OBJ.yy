@@ -1,10 +1,11 @@
 {
   "spriteId": {
-    "name": "nextLevel_SP",
-    "path": "sprites/nextLevel_SP/nextLevel_SP.yy",
+    "name": "nextLevelRed_SP",
+    "path": "sprites/nextLevelRed_SP/nextLevelRed_SP.yy",
   },
   "solid": false,
   "visible": true,
+  "managed": true,
   "spriteMaskId": null,
   "persistent": false,
   "parentObjectId": null,
