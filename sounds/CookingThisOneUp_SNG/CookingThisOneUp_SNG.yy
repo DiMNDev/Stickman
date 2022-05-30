@@ -12,7 +12,7 @@
     "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "CookingThisOneUp_SNG.mp3",
-  "duration": 107.04981,
+  "duration": 107.049812,
   "parent": {
     "name": "Sounds",
     "path": "folders/Sounds.yy",

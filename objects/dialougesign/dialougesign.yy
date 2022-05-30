@@ -5,7 +5,6 @@
   },
   "solid": false,
   "visible": true,
-  "managed": true,
   "spriteMaskId": {
     "name": "signObject_SP",
     "path": "sprites/signObject_SP/signObject_SP.yy",

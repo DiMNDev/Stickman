@@ -2,23 +2,6 @@
 //ran8 = irandom_range(-8,8);
 ran2 = irandom_range(-2,2);
 
-//y = y + ranY;
-//x = x + ranX;
-
-//if lives > 0 {
-//if distance_to_object(Stickman) < 160 && stung = false{
-//move_towards_point(Stickman.x,Stickman.y,1);
-//}
-
-//if stung = true {
-//	move_towards_point(x + ranX, Stickman.y - 64,5);
-//	if Stickman.y - y > 100 stung = false;
-
-//}
-//}
-
-//
-
 #region Beehive exists
 hiveX = localHive.x;
 hiveY = localHive.y;
