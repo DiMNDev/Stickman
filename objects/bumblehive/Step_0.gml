@@ -5,6 +5,7 @@
 -Bees will try to rebuild their hive which will reactivate the bee production
 
 */
+if instance_exists(bumbleBee_OBJ) {
 localBee = instance_nearest(x,y,bumbleBee_OBJ);
 beeX = localBee.x;
 beeY = localBee.y;
@@ -12,20 +13,26 @@ if point_in_circle(beeX,beeY,x,y,96) {
 	if (alarm[0] == -1 && image_index < 5) {
 		switch(image_index) {
 			case 0:
-			alarm_set(0,60)
+			alarm_set(0,alarmBuildCount)
 			break;
 			case 1:
-			alarm_set(0,60)
+			alarm_set(0,alarmBuildCount)
 			break;
 			case 2:
-			alarm_set(0,60)
+			alarm_set(0,alarmBuildCount)
 			break;
 			case 3:
-			alarm_set(0,60)
+			alarm_set(0,alarmBuildCount)
 			break;
 		}
 	}
 }
+}
+#region Create bees
+if beeCount < beeMax  && alarm[1] == -1 && image_index == 4{
+	alarm_set(1,240);
+}
+#endregion
 #region counter loop image rotation
 if (collisionCheck = true) {
 if i < 36 {

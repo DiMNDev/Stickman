@@ -5,9 +5,9 @@ key_up = 0
 
 #region Check flick direction 
 if hsp != 0 {
-if dragStartY < dragEndY flickDirection = "down";
+if (dragStartY < dragEndY) flickDirection = "down";
 }
-if dragStartY > dragEndY flickDirection = "up";
+if (dragStartY > dragEndY) flickDirection = "up";
 
 #endregion
 

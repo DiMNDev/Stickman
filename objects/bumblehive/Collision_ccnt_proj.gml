@@ -4,11 +4,10 @@
 it will spin and stop or it will destroy itself upon collision
 */
 rand = irandom_range(0,10)
-if rand > 3 {
+if rand > 4 {
 	collisionCheck = true
 	rand = 0
 	} else {
-	instance_deactivate_object(self)	
+	image_index = 0;	
 	}
-
 

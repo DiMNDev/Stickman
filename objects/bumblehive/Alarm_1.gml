@@ -1,3 +1,4 @@
-/// @description Insert description here
-// You can write your code in this editor
-instance_activate_object(self);
+/// @Create more bees
+beeID = instance_create_depth(x,y,1,bumbleBee_OBJ);
+beeTracker[id][beeCount] = beeID;
+beeCount++;

@@ -7,20 +7,30 @@ if runTimer > 0 draw_healthbar(x - 32, y + 40, x + 32, y + 50,runTimer,c_dkgray,
 //draw_text(x + 16, y + 44,"keyDown" + string(key_down));
 //draw_text(x + 16, y + 56,"keyRight" + string(key_right));
 //draw_text(x + 16, y + 68,"keyLeft" + string(key_left));
+draw_text(x + 16, y + 82,"flick" + string(flick));
+draw_text(x + 16, y + 94,"flicked" + string(flicked));
+#endregion
+
+#region Shader info
 //draw_text(x + 16, y + 82,"ShaderSupported" + string(shadeSup));
 //draw_text(x + 16, y + 94,"ShaderCompiled" + string(shadeComp));
 #endregion
 
 #region Collision variables
-draw_text(x + 16, y + 32,"vsp" + string(vsp));
-draw_text(x + 16, y + 44,"hsp" + string(hsp));
-draw_text(x + 16, y + 56,"vspDamage" + string(vspDamage));
-draw_text(x + 16, y + 68,"floorDistance" + string(floorDistance));
+//draw_text(x + 16, y + 32,"vsp" + string(vsp));
+//draw_text(x + 16, y + 44,"hsp" + string(hsp));
+//draw_text(x + 16, y + 56,"vspDamage" + string(vspDamage));
+//draw_text(x + 16, y + 68,"floorDistance" + string(floorDistance));
 //draw_text(x + 16, y + 82,"ShaderSupported" + string(shadeSup));
 //draw_text(x + 16, y + 94,"ShaderCompiled" + string(shadeComp));
 #endregion
 
-
+#region Bees & hive
+//if instance_exists(bumbleBee_OBJ) {
+//draw_text(x + 16, y + 32,"random" + string(bumbleBee_OBJ.ran2));
+//draw_text(x + 16, y + 44,"random8" + string(bumbleBee_OBJ.ran8));
+//}
+#endregion
 
 //draw_set_font(Font2);
 //draw_text_color(x + 16, y + 16,coin_count,1,1,1,1,c_red);

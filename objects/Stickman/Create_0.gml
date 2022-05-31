@@ -5,6 +5,7 @@ localY = 0;
 printVar = 0;
 aimAngle = 0;
 flickDirection = "";
+flicked = 0;
 vspDamage =0;
 floorDistance = 0;
 #region Shader alpha
@@ -64,7 +65,7 @@ face_left = 0;
 //character tracking
 //Stick_X = x;
 //Stick_y = y;
-//user input
+#region user input
 global.one_touch = false
 global.two_touch = false
 flick = 0;
@@ -83,6 +84,7 @@ guiDragEndY = 0;
 dragStartY = 0;
 dragEndY = 0;
 dragging = false;
+#endregion
 global.buttonTouched = false;
 //Weapon acquisiton
 global.ccntgunaquired = false;
